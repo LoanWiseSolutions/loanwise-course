@@ -871,8 +871,8 @@ const MODULES = [
           { title: "What Federal Loans Give You", body: null, points: [
             "Income-driven repayment: pay as little as $0/month based on your actual income",
             "Public Service Loan Forgiveness: full forgiveness after 10 years in qualifying public service",
-            "IDR forgiveness: remaining balance forgiven after 20–25 years of payments",
-            "Economic hardship and unemployment deferment — no credit damage during hardship",
+            "IDR forgiveness: remaining balance forgiven after 20–30 years depending on plan and when you borrowed",
+            "Hardship deferment and forbearance options (note: unemployment/economic hardship deferment eliminated for loans after July 1, 2026 under OBBBA)",
             "Death and total disability discharge — debt disappears if you cannot repay",
             "No credit check required for most federal undergraduate loans"
           ]},
@@ -933,15 +933,15 @@ const MODULES = [
       },
       {
         id: "1-4", title: "Federal Loan Types Explained",
-        subtitle: "Direct Subsidized, Unsubsidized, PLUS, and Grad PLUS — every type and its rules",
-        narration: "There are four main types of federal student loans, and each has different eligibility rules, different interest rates, different limits, and different repayment options. Knowing exactly which loans you have is the foundation of every strategy in this course — because the right move for a Direct Subsidized Loan is often completely different from the right move for a Parent PLUS loan. This lesson maps all four types so you know exactly what you're working with.",
+        subtitle: "Direct Subsidized, Unsubsidized, PLUS, and the post-OBBBA landscape — every type and its rules",
+        narration: "There are four main types of federal student loans — but as of July 1, 2026, one of them, Grad PLUS, has been eliminated for new borrowers under the One Big Beautiful Act. This is one of the most significant changes to federal student lending in decades. Graduate students who relied on Grad PLUS to cover the full gap between unsubsidized limits and cost of attendance will now face hard borrowing caps and potential gaps that can only be filled with private loans. Knowing exactly which loans you have — and which are now unavailable — is the foundation of every strategy in this course, because the right move for a Direct Subsidized Loan is completely different from the right move for a Parent PLUS loan under the new rules.",
         slides: [
-          { title: "The Four Federal Loan Types", body: null, points: [
+          { title: "The Federal Loan Types — Post-OBBBA Landscape", body: null, points: [
             "Direct Subsidized Loans — for undergraduates with financial need",
             "Direct Unsubsidized Loans — for undergraduates and graduate students, no need requirement",
-            "Direct PLUS Loans (Grad PLUS) — for graduate and professional students",
-            "Direct PLUS Loans (Parent PLUS) — for parents of dependent undergraduates",
-            "Each type has different interest rates, borrowing limits, and repayment options"
+            "Direct PLUS Loans (Grad PLUS) — ELIMINATED for new borrowers as of July 1, 2026",
+            "Direct PLUS Loans (Parent PLUS) — for parents of dependent undergraduates; new caps apply July 1, 2026",
+            "Legacy borrowers (enrolled before July 1, 2026 with existing loans) get up to 3 more years under old rules"
           ]},
           { title: "Direct Subsidized Loans", body: null, points: [
             "Available only to undergraduates with demonstrated financial need (FAFSA-based)",
@@ -955,27 +955,30 @@ const MODULES = [
             "Available to undergraduates and graduate students — no financial need required",
             "Interest rate: 6.53% (undergrad) or 8.08% (graduate) for 2024–2025",
             "Interest accrues from disbursement — even while in school",
-            "Annual limits: $5,500–$7,500 (dependent undergrads), $20,500 (graduate students)",
-            "Lifetime limit: $31,000 (dependent undergrad), $57,500 (independent undergrad), $138,500 (grad)"
+            "Annual limits: $5,500–$7,500 (dependent undergrads), $20,500 (graduate students — unchanged by OBBBA)",
+            "Old lifetime limit: $31,000 (dependent undergrad), $57,500 (independent undergrad), $138,500 (grad)",
+            "NEW under OBBBA: $257,500 total federal lifetime cap for all borrowers (excluding Parent PLUS) — effective July 1, 2026"
           ]},
-          { title: "Grad PLUS Loans", body: null, points: [
-            "Available to graduate and professional students who have exhausted unsubsidized limits",
-            "Interest rate: 9.08% for 2024–2025 — the highest rate of any federal student loan",
-            "No dollar cap — can borrow up to Cost of Attendance minus other aid",
-            "Requires credit check (adverse credit history check, not full creditworthiness review)",
-            "Eligible for all IDR plans and PSLF — this is what distinguishes them from Parent PLUS"
+          { title: "Grad PLUS Loans — ELIMINATED July 1, 2026", body: null, points: [
+            "⚠️ The One Big Beautiful Act (signed July 4, 2025) eliminated Grad PLUS for new borrowers effective July 1, 2026",
+            "Legacy provision: students with a federal loan disbursed before July 1, 2026 in their current program may continue borrowing under old rules for up to 3 more years or program completion — whichever is sooner",
+            "NEW grad borrower limits (post-7/1/2026): $20,500/year, $100,000 lifetime (graduate programs)",
+            "NEW professional program limits: $50,000/year, $200,000 lifetime (medicine, law, dentistry, etc.)",
+            "The gap between new caps and actual cost of attendance must now be filled with private loans or savings",
+            "Interest rate for Grad PLUS loans still outstanding: 8.94% for 2025–2026 disbursements"
           ]},
-          { title: "Parent PLUS Loans", body: null, points: [
-            "Borrowed by parents of dependent undergraduates — not by the student",
-            "Interest rate: 9.08% for 2024–2025",
-            "Parent is the sole legal borrower — cannot be transferred to the student",
-            "NOT eligible for SAVE, IBR, or PAYE — only ICR after consolidation",
-            "Full Module 5 is dedicated to Parent PLUS — it warrants that level of attention"
+          { title: "Parent PLUS Loans — New Caps Under OBBBA", body: null, points: [
+            "Borrowed by parents of dependent undergraduates — the parent is the sole legal borrower",
+            "Interest rate: 8.94% for 2025–2026",
+            "NEW OBBBA caps (effective July 1, 2026): $20,000/year per student, $65,000 lifetime per student",
+            "Legacy: parents who borrowed for a student before July 1, 2026 may continue under old (unlimited COA) limits for 3 more years or until program ends",
+            "Parent PLUS is NOT eligible for RAP — only Standard plan for new loans taken after July 1, 2026",
+            "Existing Parent PLUS borrowers: IBR (not ICR) becomes the primary IDR option — see Module 5"
           ]},
           { title: "How to Find Out Exactly What You Have", body: "Log in to studentaid.gov with your FSA ID. Under 'My Aid,' you will see every federal loan you have ever taken — the loan type, original amount, current balance, interest rate, and servicer. This takes 5 minutes and should be your first action after finishing this lesson.", points: null }
         ],
-        keyPoint: "Subsidized loans are always preferable — borrow those first. Grad PLUS and Parent PLUS carry the highest rates and fewest protections.",
-        quiz: { q: "A graduate student has exhausted her $20,500 annual unsubsidized loan limit. She needs an additional $15,000. What loan type is available to her, and what is the approximate interest rate?", opts: ["Direct Subsidized at 6.53%", "Grad PLUS at 9.08%", "Parent PLUS at 9.08% — her parents borrow on her behalf", "No additional federal loans are available to graduate students"], correct: 1, explanation: "Graduate students who exhaust unsubsidized limits can use Grad PLUS loans to borrow up to the Cost of Attendance minus other aid. The rate for 2024–2025 is 9.08%. Unlike Parent PLUS, Grad PLUS loans are in the student's name and are eligible for all IDR plans and PSLF." }
+        keyPoint: "Grad PLUS is eliminated for new borrowers as of July 1, 2026. Graduate students now face hard annual and lifetime caps. Legacy borrowers in existing programs get up to 3 more years under old rules.",
+        quiz: { q: "A graduate student enrolling for the first time in fall 2026 has exhausted her $20,500 annual unsubsidized loan limit. She needs an additional $18,000. What federal options are available to her?", opts: ["Grad PLUS — available up to Cost of Attendance", "No additional federal loans — Grad PLUS was eliminated July 1, 2026; she has reached the new annual federal cap and must use private loans or savings for the gap", "Parent PLUS borrowed by her parents", "She can consolidate to access more federal borrowing capacity"], correct: 1, explanation: "Grad PLUS was eliminated for new borrowers effective July 1, 2026 under the One Big Beautiful Act. The new graduate annual limit is $20,500 (same as before for unsubsidized), but there is no longer any federal loan available beyond that cap for new graduate borrowers. The $18,000 gap must be filled with private loans, institutional aid, or savings — a fundamentally different situation than pre-OBBBA borrowers faced." }
       },
       {
         id: "1-5", title: "Understanding Your Loan Servicer",
@@ -1125,8 +1128,8 @@ const MODULES = [
             "Calculate: Total loan balance at graduation ÷ Expected first-year salary",
             "Below 1.0: debt is manageable on Standard plan; IDR is optional",
             "1.0–1.5: IDR is likely beneficial; compare Standard vs IDR total cost",
-            "1.5–2.0: IDR is essential; long-term forgiveness is a realistic scenario",
-            "Above 2.0: IDR forgiveness or PSLF is likely your optimal long-term path",
+            "1.5–2.0: IDR is essential; long-term forgiveness is a realistic scenario (IBR: 20–25 yrs; RAP: 30 yrs for new loans)",
+            "Above 2.0: IDR forgiveness or PSLF is likely your optimal long-term path — note the forgiveness timeline depends on when you borrowed",
             "This one ratio predicts repayment difficulty better than any other single number"
           ]},
           { title: "The Opportunity Cost Nobody Calculates", body: null, points: [
@@ -1148,8 +1151,9 @@ const MODULES = [
             "On income-driven plans with low payments, your payment may not cover accruing interest",
             "If your $200/month IDR payment doesn't cover $350/month in interest, your balance grows by $150/month",
             "After 5 years, your original $50,000 balance could be $59,000 despite making payments",
-            "SAVE plan solved this with an interest subsidy (currently in legal limbo)",
-            "IBR and other plans do not fully protect against balance growth — plan for this scenario"
+            "SAVE plan solved this with a full interest subsidy — but SAVE is now effectively superseded by OBBBA",
+            "RAP (the new IDR plan for post-7/1/2026 borrowers) also includes an interest subsidy — balance cannot grow if you make your required payment",
+            "IBR and older plans do not fully protect against balance growth — plan for this scenario"
           ]}
         ],
         keyPoint: "Total repayment cost is what matters, not the monthly payment. Run your income-to-debt ratio before borrowing and before choosing a repayment plan.",
@@ -1264,131 +1268,160 @@ const MODULES = [
     lessons: [
       {
         id: "3-1", title: "How IDR Works",
-        subtitle: "The mechanics behind income-driven plans — and why they exist",
-        narration: "Income-driven repayment is the most powerful and most underused tool available to federal loan borrowers. The concept is remarkably simple: instead of paying a fixed amount calculated from your loan balance, you pay a percentage of your discretionary income — what you earn above a poverty-line threshold. If your income is low enough, your payment can be zero dollars per month — and that zero-dollar payment still counts toward forgiveness. Every borrower with federal student loans should understand this system, whether they use it or not, because the decision of when to use it and when not to is one of the most financially significant choices you'll make.",
+        subtitle: "The mechanics behind income-driven plans — and the major changes under OBBBA",
+        narration: "Income-driven repayment has been the most powerful tool available to federal loan borrowers — but the landscape changed dramatically on July 4, 2025, when the One Big Beautiful Act was signed into law. For borrowers with loans taken out before July 1, 2026, IBR remains available, and ICR/PAYE/SAVE must transition to IBR or the new RAP by July 1, 2028. For borrowers with new loans after July 1, 2026, the only income-driven option is a brand new plan called the Repayment Assistance Plan — RAP. Understanding which rules apply to your specific loans, and when, is now the most important question in student loan strategy. This lesson lays out both the old system and the new one clearly.",
         slides: [
-          { title: "The Core Concept", body: "Instead of a payment based on what you owe, IDR calculates a payment based on what you earn. The payment is recalculated annually when you certify your income. If your income drops, your payment drops. If your income is low enough, your payment is zero.", points: null },
-          { title: "Discretionary Income — The Formula", body: null, points: [
-            "Start with your Adjusted Gross Income (line 11 of your federal tax return)",
-            "Subtract a multiple of the federal poverty guideline for your family size (150% to 225% depending on plan)",
-            "The result is your 'discretionary income'",
-            "Your payment = a percentage of that number divided by 12",
-            "2024 poverty guideline (family of 1): $15,060. At 150% = $22,590 threshold. At 225% = $33,885 threshold"
+          { title: "The Core IDR Concept — Unchanged", body: "IDR still means your monthly payment is based on what you earn, not what you owe. The payment is recalculated annually when you certify your income. If your income drops, your payment drops. This fundamental principle applies to both IBR and RAP.", points: null },
+          { title: "Who Is Under Which System — The Critical Split", body: null, points: [
+            "Pre-7/1/2026 borrowers (no new loans after that date): IBR remains available; SAVE/PAYE/ICR must transition to IBR or RAP by July 1, 2028",
+            "New borrowers after 7/1/2026: IBR is NOT available for those new loans — only RAP or Standard plan",
+            "'Mixed' borrowers (existing loans + new loan after 7/1/2026): new loan is RAP/Standard only; existing loans can stay on IBR",
+            "All loans must eventually be on the same repayment plan under OBBBA rules",
+            "When in doubt: contact your servicer and verify which system governs your specific loans"
           ]},
-          { title: "The Four IDR Plans and Their Rates", body: null, points: [
-            "SAVE (currently in legal limbo): 5% (undergrad) or 10% (grad) of discretionary income",
-            "IBR New: 10% of discretionary income, 20-year forgiveness (borrowers after July 1, 2014)",
-            "IBR Old: 15% of discretionary income, 25-year forgiveness (pre-July 2014 borrowers)",
-            "PAYE: 10% of discretionary income, 20-year forgiveness (newer borrowers only)",
-            "ICR: 20% of discretionary income — only IDR option for consolidated Parent PLUS"
-          ]},
-          { title: "The $0 Payment Is a Real, Legal Payment", body: null, points: [
-            "If your income falls below the threshold, your calculated IDR payment is $0",
-            "A $0 payment is a qualifying payment — your loans are in good standing",
-            "A $0 payment counts toward your 20–25 year forgiveness timeline",
-            "A $0 payment counts toward PSLF if you're at a qualifying employer",
-            "Document it every year through recertification — it must be certified to count"
-          ]},
-          { title: "Recertification — The Annual Requirement", body: "IDR requires you to recertify your income and family size every 12 months. If you miss the deadline, your payment reverts to what it would be on the Standard 10-Year plan — which can be dramatically higher. Missing recertification is one of the most expensive and most preventable administrative errors a borrower can make. Module 3, Lesson 4 covers this in full detail.", points: null },
-          { title: "IDR Is Not Just a Last Resort", body: null, points: [
-            "IDR is strategic for anyone pursuing PSLF (must be on IDR for PSLF)",
-            "IDR is strategic for high-balance borrowers relative to income — regardless of field",
-            "IDR provides a payment floor — you will never pay more than 10–20% of discretionary income",
-            "Even borrowers who expect to pay off their loans before forgiveness may use IDR for cash flow management",
-            "Think of IDR as a financial safety net that also has an upside — not just a hardship program"
-          ]}
-        ],
-        keyPoint: "IDR payments can be $0 legally. They count toward forgiveness. Recertify every year — missing it can spike your payment by hundreds overnight.",
-        quiz: { q: "A borrower on IBR has a calculated payment of $0 due to low income. How does this affect her 20-year forgiveness clock?", opts: ["$0 payments don't count — she must pay at least $1 for the month to qualify", "Her $0 payment counts as a qualifying payment — the forgiveness clock advances", "Only payments above $50 count toward forgiveness on IBR", "The forgiveness clock only starts once she begins making non-zero payments"], correct: 1, explanation: "A calculated $0 payment under IDR is a fully qualifying payment. The forgiveness clock advances. This is one of the most important features of income-driven repayment — borrowers in genuine hardship continue to make progress toward forgiveness even when paying nothing." }
-      },
-      {
-        id: "3-2", title: "Comparing the IDR Plans",
-        subtitle: "SAVE, IBR, PAYE, and ICR — which plan is right for your situation",
-        narration: "There are four income-driven repayment plans, and they are not interchangeable. Each has different payment percentages, different forgiveness timelines, different eligibility requirements, and different interest treatment. Choosing the right plan for your specific income, loan balance, career path, and forgiveness goals can save tens of thousands of dollars over your repayment period. This lesson walks through each plan in detail and gives you the framework to choose.",
-        slides: [
-          { title: "SAVE — The Most Borrower-Friendly Plan (Currently Blocked)", body: null, points: [
-            "5% of discretionary income for undergraduate loans (the lowest ever created)",
-            "10% of discretionary income for graduate loans",
-            "Full interest subsidy: government covers any interest your payment doesn't",
-            "Your balance cannot grow while making payments — unprecedented protection",
-            "Forgiveness at 10 years for balances under $12,000; 20–25 years otherwise",
-            "Currently in legal limbo — courts have blocked SAVE since 2024"
-          ]},
-          { title: "IBR — The Current Safe Harbor", body: null, points: [
+          { title: "IBR — Still Available for Pre-2026 Borrowers", body: null, points: [
             "IBR New (post-July 2014): 10% of discretionary income, 20-year forgiveness",
             "IBR Old (pre-July 2014): 15% of discretionary income, 25-year forgiveness",
-            "Payment never exceeds what you'd pay on the Standard 10-Year plan",
-            "No interest subsidy — your balance can grow if payment doesn't cover interest",
-            "Available to both Direct Loan and FFEL borrowers",
-            "Currently the recommended plan for PSLF-track borrowers while SAVE is blocked"
+            "Discretionary income = AGI minus 150% of federal poverty guideline for family size",
+            "Payment is capped at Standard 10-year plan amount — you won't pay more than Standard",
+            "IBR now has no partial financial hardship requirement under OBBBA — broader access",
+            "IBR is now also available for consolidated Parent PLUS loans (replaces ICR as the IDR option)"
           ]},
-          { title: "PAYE — Pay As You Earn", body: null, points: [
-            "10% of discretionary income, capped at Standard plan payment",
-            "20-year forgiveness",
-            "Available only to borrowers who had no outstanding federal loan balance before Oct 1, 2007 AND received a new disbursement after Oct 1, 2011",
-            "No interest subsidy",
-            "If IBR and PAYE both apply, they have identical payment percentages — the difference is the 20 vs 25-year timeline on some loans"
+          { title: "RAP — The New Plan for Post-2026 Loans", body: null, points: [
+            "Payment = 1%–10% of your full AGI depending on income bracket (no poverty-level exclusion)",
+            "Minimum payment: $10/month — there is no $0 payment option under RAP",
+            "Full interest subsidy: if payment doesn't cover interest, the remainder is waived (balance cannot grow)",
+            "Principal matching: if your payment doesn't reduce principal by $50, the DOE contributes up to $50/month",
+            "Forgiveness after 30 years (360 payments) — longer than IBR's 20–25 years",
+            "PSLF still works with RAP — 120 qualifying payments for tax-free forgiveness"
           ]},
-          { title: "ICR — Income-Contingent Repayment", body: null, points: [
-            "20% of discretionary income OR fixed 12-year amortized payment — whichever is lower",
-            "25-year forgiveness",
-            "The only IDR option for Direct Consolidation Loans that included Parent PLUS",
-            "Highest payment percentage of all IDR plans",
-            "Available to all Direct Loan borrowers including those who don't qualify for IBR/PAYE",
-            "No partial financial hardship requirement"
+          { title: "RAP vs IBR — The Key Differences", body: null, points: [
+            "Forgiveness timeline: RAP = 30 years; IBR New = 20 years; IBR Old = 25 years",
+            "Minimum payment: RAP = $10/month; IBR = $0 possible if income is low enough",
+            "Interest protection: RAP fully subsidizes unpaid interest; IBR does not",
+            "Low-income borrowers: IBR can mean $0 payments; RAP means at least $10",
+            "Higher-income borrowers: RAP's AGI-based formula (no poverty exclusion) can mean higher payments than IBR",
+            "For most low-to-moderate income borrowers: IBR is still preferable if you qualify for it"
           ]},
-          { title: "How to Choose — The Decision Matrix", body: null, points: [
-            "Pursuing PSLF: use IBR (or SAVE when available) — minimize payments, maximize forgiveness",
-            "High balance relative to income, not in public service: IBR New (20-year forgiveness)",
-            "Parent PLUS loans: consolidate, then ICR — it's your only option",
-            "Low balance (<$12,000), not in public service: SAVE when available offers 10-year forgiveness",
-            "Any plan beats defaulting — if you're struggling, any IDR is better than missed payments"
-          ]},
-          { title: "You Can Switch Plans — For Free, At Any Time", body: "One of the most overlooked features of income-driven repayment is that you can change your IDR plan whenever your circumstances change. Income dropped? Switch to a plan with lower payments. Pursuing PSLF now? Switch to a qualifying plan. Starting to earn more and want to pay off faster? Switch. There's no penalty and no fee. Submit a new IDR application on studentaid.gov.", points: null }
-        ],
-        keyPoint: "IBR is the current safe harbor while SAVE is in legal limbo. For Parent PLUS: consolidate first, then ICR. You can switch plans for free — use that flexibility.",
-        quiz: { q: "A borrower is pursuing PSLF and currently enrolled in SAVE. SAVE is in administrative forbearance and forbearance months don't count as PSLF qualifying payments. What should she do?", opts: ["Stay in SAVE and wait — the forbearance will resolve soon", "Switch to IBR immediately — every month in SAVE forbearance is a lost PSLF qualifying payment", "Switch to the Standard 10-Year plan to pay less interest", "Consolidate loans to reset her payment count"], correct: 1, explanation: "Every month in SAVE forbearance is a month not counting toward PSLF. With 120 qualifying payments required, she cannot afford to lose months. Switching to IBR now means qualifying payments resume immediately. When SAVE's legal situation resolves, she can evaluate switching back." }
-      },
-      {
-        id: "3-3", title: "The SAVE Plan — Deep Dive",
-        subtitle: "What SAVE was, why it matters, and what its legal fight means for you right now",
-        narration: "The SAVE plan — Saving on a Valuable Education — was the most significant change to federal student loan repayment policy in a generation. It was designed to eliminate the problem of negative amortization: the phenomenon where borrowers make payments but their balances grow because the payments don't cover accruing interest. SAVE solved this with a full interest subsidy. It also lowered payment percentages to their lowest levels in federal lending history. Then a coalition of states sued in federal court, arguing the administration exceeded its authority, and in 2024 courts blocked SAVE entirely. This lesson explains what SAVE was designed to do, its current legal status, and exactly what you should do about it right now.",
-        slides: [
-          { title: "What SAVE Was Designed to Accomplish", body: null, points: [
-            "Replace REPAYE with a dramatically more generous IDR option",
-            "Eliminate negative amortization: if your payment is less than accruing interest, government covers the gap",
-            "Your balance never grows while making qualifying payments — a first in federal lending",
-            "Lower payment percentages: 5% for undergrad loans, 10% for grad loans",
-            "Accelerated forgiveness: balances under $12,000 forgiven after just 10 years of payments",
-            "A single borrower earning $32,800/year would have a $0 monthly payment under SAVE"
-          ]},
-          { title: "The Interest Subsidy — A Revolution in Concept", body: "The most transformative feature of SAVE was the interest subsidy. Under previous plans, a borrower with a $200/month IDR payment and $350/month in accruing interest would watch their balance grow by $150 every month. Under SAVE, the government covered that $150 gap. Balance growth on SAVE was zero. This single change would have saved millions of borrowers from the 'I've been paying for years and I owe more than when I started' problem.", points: null },
-          { title: "The Legal Fight — What Happened", body: null, points: [
-            "Multiple states filed lawsuits arguing the Biden administration exceeded authority under the HEROES Act",
-            "Federal courts agreed, issuing injunctions that blocked SAVE implementation",
-            "The Department of Education placed all SAVE enrollees in administrative forbearance",
-            "Forbearance: no payments required, no interest accruing — but NO progress toward forgiveness",
-            "SAVE forbearance months do NOT count toward IDR forgiveness or PSLF qualifying payments",
-            "The legal battle continued through appellate courts and the future remains uncertain"
-          ]},
-          { title: "What SAVE Borrowers Should Do Right Now", body: null, points: [
-            "If pursuing PSLF: switch to IBR immediately — do not wait for SAVE to resolve",
-            "If pursuing IDR forgiveness (not PSLF): evaluate whether switching to IBR makes sense for your timeline",
-            "If you have a small balance under $12,000 and low income: consider IBR — the 20-year clock still runs",
-            "If you are not in a hurry and income is very low (payment would be $0 regardless): staying in forbearance has no immediate monthly cost — but every month is a lost progress month",
-            "Monitor studentaid.gov — the situation is actively evolving"
-          ]},
-          { title: "The Larger Policy Lesson", body: "Regardless of SAVE's ultimate legal fate, it demonstrated that the federal government can design IDR plans with zero balance growth and payments calibrated at 5% of income. This policy direction — lower percentages, stronger interest protection — is likely to influence future legislation. Even if SAVE is struck down, expect the next major IDR reform to reflect these principles.", points: null },
-          { title: "SAVE vs IBR — The Practical Comparison Today", body: null, points: [
-            "SAVE: 5%/10% payments, full interest subsidy, 10–20-25 year forgiveness — BLOCKED",
-            "IBR New: 10% payments, no interest subsidy, 20-year forgiveness — AVAILABLE NOW",
-            "For PSLF borrowers: IBR is the clear choice while SAVE is blocked",
-            "For non-PSLF borrowers: difference in total cost depends on income, balance, and timeline",
-            "For small-balance borrowers: IBR's 20-year clock is available now; SAVE's 10-year option is not"
+          { title: "The Transition Deadlines — Act Before 2028", body: null, points: [
+            "If you are currently in SAVE, PAYE, or ICR: you must switch to IBR or RAP by July 1, 2028",
+            "If you don't make a selection by July 1, 2028: you will be automatically placed in RAP",
+            "For most borrowers already in SAVE/PAYE/ICR: IBR is usually the better choice than RAP (shorter forgiveness timeline, $0 payment option)",
+            "Submit your IBR enrollment at studentaid.gov before June 30, 2028 — don't wait for automatic placement",
+            "PSLF borrowers: stay in IBR (or RAP) and continue certifying employment — PSLF itself was not changed by OBBBA"
           ]}
         ],
-        keyPoint: "SAVE is blocked. PSLF borrowers must switch to IBR immediately. Every month in SAVE forbearance is a lost qualifying payment.",
-        quiz: { q: "A PSLF-track borrower has been in SAVE forbearance for 10 months. She has 72 prior qualifying payments. How many qualifying payments does she now have?", opts: ["82 — forbearance months count for PSLF", "72 — she has lost 10 months of progress", "72 + some partial credit for the forbearance months", "It depends on whether her employer certified the forbearance period"], correct: 1, explanation: "Administrative forbearance months do not count as PSLF qualifying payments. She entered forbearance with 72 qualifying payments. She still has 72. The 10 months in forbearance added zero progress toward the 120 required. She needs 48 more qualifying payments. This is why switching to IBR immediately is critical for anyone on the PSLF track." }
+        keyPoint: "Pre-2026 borrowers: get on IBR now if in SAVE/PAYE/ICR — don't wait for the 2028 forced switch. New 2026+ borrowers: RAP is your only IDR option. RAP has a $10 minimum and 30-year forgiveness.",
+        quiz: { q: "A borrower took out all her loans before July 1, 2026 and is currently in SAVE forbearance. What should she do, and by when must she act?", opts: ["Stay in SAVE — it will be restored by the courts eventually", "Switch to IBR immediately — and she must be on IBR or RAP before July 1, 2028 or she'll be auto-placed in RAP", "Switch to RAP — it's the only valid plan for existing borrowers after 2026", "Do nothing until 2028, then decide"], correct: 1, explanation: "SAVE is effectively dead — courts blocked it and OBBBA has replaced the IDR framework for new borrowers. Existing borrowers in SAVE, PAYE, or ICR must transition to IBR or RAP by July 1, 2028. IBR is usually better for pre-2026 borrowers because it offers 20-year forgiveness (vs RAP's 30) and can produce $0 payments if income is low enough. She should switch to IBR now — every month in SAVE forbearance is a lost forgiveness/PSLF progress month." }
+      },
+      {
+        id: "3-2", title: "Comparing the Repayment Plans",
+        subtitle: "IBR, RAP, Standard — which plan applies to you and which is the right choice",
+        narration: "The repayment plan landscape after the One Big Beautiful Act looks very different from what existed before. SAVE, PAYE, and ICR are being phased out. For borrowers who took out loans before July 1, 2026, IBR is the key income-driven plan to know. For borrowers with new loans after that date, RAP is the only income-driven option. And for Parent PLUS borrowers, the rules just changed again — IBR is now accessible after consolidation, replacing the old ICR-only path. This lesson compares every option side by side so you can identify exactly which plan applies to your loans and which gives you the best outcome.",
+        slides: [
+          { title: "IBR New — The Workhorse for Pre-2026 Borrowers", body: null, points: [
+            "Available to borrowers with loans disbursed after July 1, 2014",
+            "Payment: 10% of discretionary income (AGI minus 150% of federal poverty guideline)",
+            "Forgiveness: 20 years",
+            "Payment capped at Standard 10-year amount — never pay more than Standard",
+            "No partial financial hardship requirement under OBBBA — broader eligibility",
+            "Now available for consolidated Parent PLUS loans — a significant new access point"
+          ]},
+          { title: "IBR Old — For Borrowers With Pre-July 2014 Loans", body: null, points: [
+            "Applies to borrowers whose first federal loan was disbursed before July 1, 2014",
+            "Payment: 15% of discretionary income",
+            "Forgiveness: 25 years",
+            "Payment capped at Standard 10-year amount",
+            "Same poverty-guideline calculation as IBR New — just a higher percentage and longer timeline",
+            "Can still produce $0 payments when income is below the poverty threshold"
+          ]},
+          { title: "RAP — Repayment Assistance Plan (New for Post-2026 Loans)", body: null, points: [
+            "The ONLY income-driven option for loans disbursed on or after July 1, 2026",
+            "Payment: 1%–10% of your full AGI (sliding scale by income bracket) divided by 12, minus $50 per dependent",
+            "Minimum payment: $10/month — no $0 payments",
+            "Full interest subsidy: unpaid monthly interest is waived, balance cannot grow",
+            "Principal matching: DOE contributes up to $50/month if your payment won't reduce principal",
+            "Forgiveness: 30 years — significantly longer than IBR's 20–25 years"
+          ]},
+          { title: "Standard Plans — Fixed Options for All Borrowers", body: null, points: [
+            "New Standard plan (OBBBA): fixed payments over 10, 15, 20, or 25 years based on loan balance",
+            "Traditional Standard 10-Year: still available for pre-2026 borrowers",
+            "Standard plan is PSLF-qualifying — relevant for those pursuing forgiveness after 120 payments",
+            "Standard plans have no income adjustment — payment is fixed at origination",
+            "For borrowers with low income-to-debt ratios (below 1.0), Standard may be the cheapest total-cost option"
+          ]},
+          { title: "ICR, PAYE, SAVE — What Happened to Them", body: null, points: [
+            "SAVE: courts blocked it in 2024; OBBBA effectively supersedes it — it is gone",
+            "PAYE and ICR: still technically active but must be transitioned by July 1, 2028",
+            "Borrowers in PAYE/ICR/SAVE: switch to IBR before July 1, 2028 or you'll be auto-placed in RAP",
+            "Double consolidation loophole for Parent PLUS into ICR: closed as of July 1, 2025",
+            "Parent PLUS borrowers now use IBR (after consolidation) — not ICR"
+          ]},
+          { title: "The Decision Matrix — Which Plan Is Right for You", body: null, points: [
+            "Pursuing PSLF, pre-2026 loans: IBR (or RAP) — minimize payments, maximize forgiveness at 120 payments",
+            "Pursuing PSLF, post-2026 loans: RAP — it's your only IDR option; still PSLF-qualifying",
+            "High balance/moderate income, no PSLF, pre-2026 loans: IBR New (20-year forgiveness)",
+            "High balance/moderate income, no PSLF, post-2026 loans: RAP (30-year forgiveness) — plan for longer timeline",
+            "Parent PLUS loans: consolidate, then IBR — ICR is no longer the required path",
+            "Low balance (<$30K) or high income: Standard plan may cost less total — run the Loan Simulator"
+          ]}
+        ],
+        keyPoint: "If you have pre-2026 loans in SAVE/PAYE/ICR: switch to IBR now — don't wait until 2028. New post-2026 loans: RAP is the only IDR option, with 30-year forgiveness and a $10 minimum payment.",
+        quiz: { q: "A nurse with $68,000 in loans taken entirely before July 1, 2026 is currently in PAYE. She works for a for-profit hospital (no PSLF). What should she do before July 1, 2028?", opts: ["Stay in PAYE — it offers 20-year forgiveness and lower payments than IBR", "Switch to IBR before July 1, 2028 — PAYE is being phased out and if she doesn't act she'll be auto-placed in RAP with its 30-year forgiveness timeline", "Switch immediately to RAP to get the interest subsidy benefit", "Consolidate into a new loan to access the most current repayment options"], correct: 1, explanation: "PAYE must be transitioned by July 1, 2028. Her best move is to switch to IBR New — which also offers 20-year forgiveness and up to $0 payments, virtually identical to PAYE for most borrowers. If she waits and misses the deadline, she's auto-placed in RAP with its 30-year forgiveness. Switching to IBR voluntarily preserves the shorter 20-year timeline and avoids the higher minimum RAP payment." }
+      },
+      {
+        id: "3-3", title: "The RAP Plan — Deep Dive",
+        subtitle: "Everything you need to know about the new Repayment Assistance Plan created by OBBBA",
+        narration: "The Repayment Assistance Plan is the federal government's new income-driven repayment option, created by the One Big Beautiful Act and available starting July 1, 2026. It replaces SAVE, PAYE, and ICR as the standard income-driven option for new loans. RAP has real benefits — the full interest subsidy means your balance literally cannot grow if you make your required payment. But it also has real costs — a 30-year forgiveness timeline instead of 20, a $10 minimum payment instead of $0, and an AGI-based formula that can mean higher payments than IBR for low-income borrowers. This lesson breaks down exactly how RAP works so you can decide whether it's the right plan for your situation.",
+        slides: [
+          { title: "How RAP Calculates Your Payment", body: null, points: [
+            "Take your Adjusted Gross Income (AGI) from your federal tax return",
+            "Divide by 12 to get monthly AGI",
+            "Subtract $50 per dependent listed on your tax return",
+            "Apply a sliding percentage: 1% of AGI up to $10K/year, increasing to 10% above $100K/year",
+            "Minimum payment: $10/month — no $0 option exists under RAP",
+            "Example: $40,000 AGI, single filer, no dependents ≈ $132/month under RAP"
+          ]},
+          { title: "RAP's Interest Subsidy — The Crown Jewel", body: null, points: [
+            "If your RAP payment doesn't cover your monthly accruing interest, the government waives the difference",
+            "Example: $200/month in interest, $10 RAP payment → $190 in interest waived, not added to balance",
+            "Your balance cannot grow while making required RAP payments — unprecedented protection",
+            "Additionally: if your payment doesn't reduce principal by $50/month, the DOE contributes up to $50",
+            "This principal matching means even minimum RAP payments make forward progress on your debt",
+            "This feature is RAP's biggest advantage over IBR, which has no interest subsidy at all"
+          ]},
+          { title: "RAP's Forgiveness — 30 Years", body: null, points: [
+            "After 360 qualifying payments (30 years), any remaining balance is forgiven",
+            "This is 5–10 years longer than IBR's 20–25 year forgiveness",
+            "60 more payments = potentially thousands of dollars more paid before forgiveness",
+            "For many borrowers, especially those with moderate-to-high incomes, they'll pay off the loan before 30 years anyway",
+            "For low-income borrowers: the interest subsidy helps, but the longer timeline is a real cost",
+            "PSLF: still 120 payments (10 years) under RAP — PSLF timeline is unchanged"
+          ]},
+          { title: "RAP and PSLF — An Important Combination", body: null, points: [
+            "RAP is a qualifying repayment plan for PSLF",
+            "New borrowers after July 1, 2026 pursuing PSLF can use RAP and still reach forgiveness at 120 payments",
+            "The higher RAP minimum payment ($10) vs IBR ($0) means less remaining balance to forgive at PSLF",
+            "But for public service workers, PSLF forgiveness is typically so large that the $10 minimum is irrelevant",
+            "Certify PSLF employment annually through MOHELA — this requirement is unchanged by OBBBA"
+          ]},
+          { title: "Who Benefits from RAP vs IBR", body: null, points: [
+            "RAP is better than IBR when: your income is moderate-to-high and the interest subsidy meaningfully prevents balance growth",
+            "IBR is better than RAP when: your income is low (IBR can reach $0; RAP never goes below $10)",
+            "IBR is better when: you want the shortest possible IDR forgiveness (20 years vs 30)",
+            "RAP is the only option when: your loans were all disbursed after July 1, 2026",
+            "Run the Loan Simulator at studentaid.gov with both options when your loans qualify for both"
+          ]},
+          { title: "The Transition — Existing Borrowers Moving to RAP", body: null, points: [
+            "You are NOT required to switch to RAP if your loans are pre-7/1/2026 and you're on IBR",
+            "PAYE, SAVE, ICR borrowers must switch to IBR or RAP by July 1, 2028",
+            "If you are auto-placed into RAP because you missed the 2028 deadline, you can still switch to IBR if eligible",
+            "Mixing loan eras (pre-2026 + post-2026 loans) is complex — consult studentaid.gov or a specialist",
+            "RAP availability: July 1, 2026 — mark your calendar if you're a new borrower"
+          ]}
+        ],
+        keyPoint: "RAP has a $10 minimum, full interest subsidy, and 30-year forgiveness. For pre-2026 borrowers: IBR is usually better. For new 2026+ borrowers: RAP is your only IDR option. PSLF still works with RAP.",
+        quiz: { q: "A new medical student borrows $50,000 in post-July 2026 federal loans. She earns $0 as a student. What is her RAP payment, and can her balance grow?", opts: ["$0 — RAP adjusts to income just like SAVE did", "$10/month minimum — and her balance cannot grow because the interest subsidy covers unpaid interest", "$10/month minimum — but her balance can grow because the interest subsidy doesn't apply to students", "She doesn't qualify for RAP until after graduation"], correct: 1, explanation: "RAP's minimum payment is $10/month — there is no $0 option. However, RAP's full interest subsidy means that any interest not covered by her $10 payment is waived by the government. Her balance cannot increase while making her required $10 RAP payments. This interest protection is one of RAP's most significant features." }
       },
       {
         id: "3-4", title: "Annual Recertification",
@@ -1457,11 +1490,11 @@ const MODULES = [
             "Calculate the estimated tax and divide by the years remaining — save that amount monthly",
             "Evaluate the insolvency exclusion as a potential strategy with your CPA"
           ]},
-          { title: "The Current Tax-Free Window — 2021–2025", body: "The American Rescue Plan temporarily made all student loan forgiveness tax-free at the federal level through 2025. This provision affected borrowers who received forgiveness in that window. Whether Congress extends this provision is uncertain. As of the recording date, the standard treatment — forgiven IDR amounts are taxable — applies after 2025 unless Congress acts.", points: null },
+          { title: "The Current Tax Treatment — Important Update", body: "The American Rescue Plan's provision making IDR forgiveness tax-free at the federal level expired on December 31, 2025. As of January 1, 2026, IDR forgiveness is once again treated as ordinary taxable income. PSLF forgiveness remains permanently tax-free. This makes tax planning for IDR forgiveness even more critical than before.", points: null },
           { title: "The Math Still Usually Favors IDR", body: "Even accounting for the tax bomb, the total cost of IDR repayment plus the estimated tax on forgiveness is usually significantly less than paying off the loan in full on the Standard plan. Run the numbers with the Loan Simulator, add an estimated tax reserve, and compare to Standard total cost. In most high-balance/moderate-income scenarios, IDR wins even after taxes.", points: null }
         ],
         keyPoint: "IDR forgiveness is taxable (PSLF is not). Start planning for the tax bill 5+ years before forgiveness. The insolvency exclusion may eliminate the bill entirely.",
-        quiz: { q: "A borrower has $95,000 forgiven after 20 years on IBR. She is in the 22% federal tax bracket. She had no tax planning. What is her approximate federal tax liability in the year of forgiveness?", opts: ["$0 — all student loan forgiveness is tax-free", "$9,500 — a 10% tax rate applies to loan forgiveness", "$20,900 — 22% of $95,000", "$47,500 — 50% of the forgiven amount"], correct: 2, explanation: "IDR forgiveness (not PSLF) is treated as ordinary income. The $95,000 forgiven is added to her taxable income for that year. At a 22% marginal rate, federal tax owed = $95,000 × 22% = $20,900. State taxes may add more. This is why tax planning beginning years before forgiveness is essential for IDR borrowers." }
+        quiz: { q: "A borrower whose loans were all disbursed before July 1, 2026 is on IBR New. A borrower whose loans were all disbursed after July 1, 2026 is on RAP. Both have identical balances and income. How do their IDR forgiveness timelines differ?", opts: ["They're the same — both plans offer 20-year forgiveness", "IBR New borrower: 20-year forgiveness. RAP borrower: 30-year forgiveness. A 10-year difference.", "RAP borrower: 20-year forgiveness. IBR New borrower: 25-year forgiveness.", "Both qualify for 25-year forgiveness under the new OBBBA rules"], correct: 1, explanation: "IBR New has a 20-year forgiveness timeline. RAP, created by OBBBA for new post-July 2026 loans, has a 30-year forgiveness timeline. That 10-year difference means 120 additional payments — potentially tens of thousands of dollars more paid before forgiveness, or a much larger remaining balance if the loan grows. This is one of the key reasons pre-2026 borrowers should stay on IBR rather than voluntarily switching to RAP." }
       }
     ]
   },
@@ -1489,7 +1522,7 @@ const MODULES = [
           ]},
           { title: "Three Requirements — ALL Must Be Met Simultaneously", body: null, points: [
             "Qualifying loans: must be Direct Loans (or FFEL/Perkins consolidated into Direct)",
-            "Qualifying repayment plan: must be on IDR (IBR, SAVE, PAYE, ICR) or Standard 10-Year plan",
+            "Qualifying repayment plan: must be on IBR or RAP (for post-7/1/2026 loans). SAVE, PAYE, and ICR are being phased out — switch to IBR or RAP before July 1, 2028",
             "Qualifying employment: must be full-time (30+ hours/week) at a qualifying employer when making payments",
             "All three requirements must be met for each payment to count",
             "One disqualifying factor in any month means that month doesn't count — even if the other two are met"
@@ -1586,14 +1619,14 @@ const MODULES = [
         subtitle: "When PSLF isn't your path, long-term IDR forgiveness is the strategy",
         narration: "For borrowers who don't work in public service and won't qualify for PSLF, income-driven repayment still ends in forgiveness — it just takes 20 to 25 years instead of 10. For borrowers with high balances relative to income, this can still be an enormously valuable strategy. A borrower who owes $150,000 but earns $55,000 per year will make manageable IDR payments for 20 years and potentially have a very large balance forgiven at the end. The math, the tax implications, and the strategic considerations are different from PSLF — and this lesson walks through all of them in the detail they deserve.",
         slides: [
-          { title: "How IDR Forgiveness Works", body: "After 20 years (undergraduate loans on SAVE/PAYE/IBR New) or 25 years (graduate loans on some plans, ICR, older borrowers on IBR Old) of qualifying IDR payments, any remaining balance is forgiven. Unlike PSLF, the forgiven amount is currently treated as taxable income in the year of forgiveness.", points: null },
-          { title: "Forgiveness Timeline by Plan", body: null, points: [
-            "SAVE: 20 years for undergrad-only borrowers; 25 years if any graduate loans",
-            "PAYE: 20 years for all loans",
-            "IBR New: 20 years (first borrowed after July 1, 2014)",
-            "IBR Old: 25 years (first borrowed before July 1, 2014)",
-            "ICR: 25 years",
-            "Qualifying payments must be on an IDR plan — non-IDR plan payments do not count toward forgiveness"
+          { title: "How IDR Forgiveness Works", body: "After the required number of years of qualifying IDR payments, any remaining balance is forgiven. The timeline depends on your plan and when your loans were disbursed. Unlike PSLF, this forgiven amount is currently treated as taxable income in the year of forgiveness.", points: null },
+          { title: "Forgiveness Timeline by Plan — Post-OBBBA", body: null, points: [
+            "IBR New (first borrowed after July 1, 2014): 20 years",
+            "IBR Old (first borrowed before July 1, 2014): 25 years",
+            "RAP (loans disbursed on or after July 1, 2026): 30 years",
+            "ICR and PAYE: being phased out — must transition to IBR or RAP by July 1, 2028",
+            "The plan you're on at forgiveness determines your timeline — switching plans can reset or extend it",
+            "Note: IDR forgiveness tax-free provision (American Rescue Plan) expired December 31, 2025 — forgiveness is taxable again"
           ]},
           { title: "Who IDR Forgiveness Makes Strategic Sense For", body: null, points: [
             "Borrowers with income-to-debt ratio above 1.5 — forgiveness is mathematically realistic",
@@ -1730,7 +1763,7 @@ const MODULES = [
           { title: "The Fresh Start Program — Background for Context", body: "The Fresh Start initiative (2022–2024) allowed defaulted borrowers to return to good standing with a single request to their servicer. This was a one-time, time-limited opportunity. If you missed it, rehabilitation and consolidation remain available. The lesson: programs like Fresh Start can appear without much warning. Staying aware of federal student loan policy news is part of responsible borrower practice.", points: null }
         ],
         keyPoint: "Act before default — IDR, deferment, and forbearance prevent it entirely. After default, rehabilitation removes the mark from your credit; consolidation is faster.",
-        quiz: { q: "A borrower is 200 days delinquent and has 70 days before default. She can barely afford any payment. What is her best move?", opts: ["Do nothing and wait to see if default consequences are as bad as described", "Call her servicer immediately, request economic hardship deferment or an IDR enrollment, and act before the 270-day default point", "Consolidate her loans — consolidation automatically exits delinquency", "Apply for Fresh Start"], correct: 1, explanation: "She has 70 days before default — enough time to act. Calling her servicer to request economic hardship deferment or IDR enrollment can stop the default clock entirely. IDR can result in a $0 monthly payment if income is low enough. Acting now prevents the far more serious consequences of default: garnishment, credit damage, and collection fees." }
+        quiz: { q: "A borrower is 200 days delinquent and has 70 days before default. She can barely afford any payment. What is her best move?", opts: ["Do nothing and wait to see if default consequences are as bad as described", "Call her servicer immediately, request an IDR enrollment or forbearance, and act before the 270-day default point", "Consolidate her loans — consolidation automatically exits delinquency", "Apply for Fresh Start"], correct: 1, explanation: "She has 70 days before default — enough time to act. Calling her servicer to request IDR enrollment or forbearance can stop the default clock entirely. IDR can result in a very low monthly payment ($10 minimum on RAP, $0 possible on IBR for pre-2026 borrowers) if income is low enough. Acting now prevents the far more serious consequences of default: garnishment, credit damage, and collection fees. Note: unemployment and economic hardship deferment were eliminated for loans originated after July 1, 2026." }
       }
     ]
   },
@@ -1746,28 +1779,28 @@ const MODULES = [
     lessons: [
       {
         id: "5-1", title: "What Parent PLUS Loans Actually Are",
-        subtitle: "The highest-rate federal loan with the fewest protections — and how it ends up in retirement",
-        narration: "Parent PLUS loans are federal loans — but they are not student loans. They are borrowed by parents, not students. They carry the highest interest rate of any federal loan. They are subject to far fewer income-driven repayment options than student loans. And they are extended to parents through a minimal credit check — far below what any private lender would require for a loan at this interest rate. Every year, millions of parents sign Parent PLUS applications in 15 minutes without understanding that they are taking on debt that could follow them into retirement, that can never be transferred to their child, and that has only one income-driven repayment option — and that option requires an additional step to access. This lesson is the conversation most families never have.",
+        subtitle: "The highest-rate federal loan with the fewest protections — and what changed under OBBBA",
+        narration: "Parent PLUS loans are federal loans — but they are not student loans. They are borrowed by parents, not students. They carry among the highest interest rates of any federal loan. And as of July 1, 2026, the One Big Beautiful Act changed their rules in two major ways: it capped how much parents can borrow, and it changed which income-driven plans are available. Pre-OBBBA Parent PLUS borrowers now access IBR after consolidation — replacing the old ICR-only path. New Parent PLUS loans taken after July 1, 2026 are capped at $20,000 per year and $65,000 lifetime per student, and are NOT eligible for any IDR plan at all. This lesson is the conversation most families never have before signing a 15-minute application that can follow them into retirement.",
         slides: [
-          { title: "Parent PLUS — The Defining Characteristics", body: null, points: [
-            "Borrowed by the parent — the parent is the sole legal borrower",
-            "Interest rate: 9.08% for 2024–2025 — the highest of any federal loan",
+          { title: "Parent PLUS — The Defining Characteristics (Post-OBBBA)", body: null, points: [
+            "Borrowed by the parent — the parent is the sole legal borrower, forever",
+            "Interest rate: 8.94% for 2025–2026 — among the highest of any federal loan",
             "Loan origination fee: 4.228% deducted from each disbursement",
-            "No dollar limit per year — parents can borrow up to the full Cost of Attendance",
-            "No requirement that the student has used their own federal loan eligibility first",
-            "Available to parents who pass a minimal adverse credit history check"
+            "NEW OBBBA cap: $20,000/year per student, $65,000 lifetime per student (effective July 1, 2026)",
+            "Legacy borrowers (student enrolled before 7/1/2026): may continue under old unlimited COA limits for up to 3 more years",
+            "Available to parents who pass a minimal adverse credit history check — no affordability review"
           ]},
-          { title: "The Repayment Difference That Changes Everything", body: null, points: [
-            "Parent PLUS loans are NOT eligible for SAVE, IBR, or PAYE — period",
-            "The only income-driven repayment option is ICR — Income-Contingent Repayment",
-            "ICR requires a two-step process: consolidate into a Direct Consolidation Loan FIRST, then apply for ICR",
-            "ICR payment rate is 20% of discretionary income — double or more than most student IDR plans",
-            "Without consolidation, the parent is stuck on Standard, Graduated, or Extended repayment only"
+          { title: "The Repayment Difference That Changes Everything (Post-OBBBA)", body: null, points: [
+            "Pre-OBBBA / existing Parent PLUS loans: IBR is now accessible after consolidation — replaces ICR as the primary IDR path",
+            "The old double-consolidation loophole into ICR is closed as of July 1, 2025",
+            "New Parent PLUS loans (after July 1, 2026): NOT eligible for RAP, IBR, or any IDR plan — Standard plan only",
+            "IBR after consolidation: 10% of discretionary income, 20-year forgiveness (IBR New) — dramatically better than old ICR at 20%",
+            "Without consolidation, existing PLUS borrowers are stuck on Standard, Graduated, or Extended repayment"
           ]},
           { title: "The Retirement Risk in Numbers", body: null, points: [
             "A parent who borrows $60,000 in Parent PLUS at age 52 will be in repayment at age 62",
-            "Standard 10-Year payment on $60,000 at 9.08% ≈ $760/month",
-            "If this payment competes with retirement savings, the long-term cost is far greater than $760",
+            "Standard 10-Year payment on $60,000 at 8.94% ≈ $750/month",
+            "If this payment competes with retirement savings, the long-term cost is far greater than $750",
             "Social Security benefits can be garnished for defaulted Parent PLUS loans",
             "Retirement income is not exempt from student loan collections — a fact most parents don't know"
           ]},
@@ -1789,63 +1822,63 @@ const MODULES = [
             "If the answer to the last question is yes, that is not an acceptable outcome to accept passively"
           ]}
         ],
-        keyPoint: "Parent PLUS is the parent's debt forever. At 9.08% with only ICR as an IDR option, it is the most dangerous federal loan for family financial health.",
+        keyPoint: "Parent PLUS is the parent's debt forever. New OBBBA loans (post-7/1/2026) have no IDR option at all. Existing PLUS borrowers now access IBR after consolidation — significantly better than the old ICR path.",
         quiz: { q: "A parent takes out $70,000 in Parent PLUS loans for her daughter's education. Her daughter agrees to make the payments after graduation. 3 years later, the daughter loses her job and stops paying for 9 months. What happens?", opts: ["The loan automatically goes into income-driven repayment based on the daughter's income", "The parent's credit is damaged and her wages can be garnished — the loan is legally the parent's", "The loan transfers to the daughter since she was the one making payments", "Nothing — Parent PLUS loans have a 12-month grace period for non-payment"], correct: 1, explanation: "Parent PLUS loans cannot be transferred. The parent is the legal borrower regardless of who was making payments. When the daughter stops paying, the parent's credit report reflects the delinquency. If it reaches 270 days, the parent's wages, tax refunds, and Social Security benefits are at risk — not the daughter's." }
       },
       {
-        id: "5-2", title: "The ICR Strategy for Parent PLUS",
-        subtitle: "The only income-driven path — the two-step process and how to execute it",
-        narration: "If you have Parent PLUS loans and cannot manage Standard plan payments, Income-Contingent Repayment is your only income-driven option — but it's not accessible directly. Parent PLUS loans must first be consolidated into a Direct Consolidation Loan, and only after that consolidation is complete can you apply for ICR. This two-step process confuses borrowers constantly, and parents who don't know about it spend years on Standard plan payments that are eating into their retirement savings when a significantly lower ICR payment was available the entire time. This lesson walks through every step.",
+        id: "5-2", title: "The IBR Strategy for Parent PLUS",
+        subtitle: "The post-OBBBA income-driven path for existing Parent PLUS borrowers — and how to execute it",
+        narration: "The One Big Beautiful Act changed the Parent PLUS repayment landscape significantly. The old path was consolidate, then ICR at 20% of discretionary income. The new path for existing borrowers is consolidate, then IBR at 10% of discretionary income with 20-year forgiveness. That single change — from 20% to 10% — cuts the IDR payment in half for most parents. The double-consolidation loophole into ICR that some borrowers exploited is now closed. For parents who took out loans before July 1, 2026, IBR after consolidation is the strategy to know. This lesson walks through every step.",
         slides: [
-          { title: "The Two-Step Process — No Shortcuts", body: null, points: [
+          { title: "The Two-Step Process — Still Required, Better Outcome", body: null, points: [
             "Step 1: Consolidate your Parent PLUS loans into a Direct Consolidation Loan at studentaid.gov",
-            "Step 2: Apply for Income-Contingent Repayment on the newly consolidated loan",
-            "You CANNOT apply for ICR directly on a Parent PLUS loan — it must be consolidated first",
+            "Step 2: Apply for IBR (Income-Based Repayment) on the newly consolidated loan",
+            "You CANNOT apply for IBR directly on a Parent PLUS loan — consolidation is required first",
             "Consolidation takes approximately 30–90 days to complete",
-            "After consolidation, the new loan is a Direct Consolidation Loan — eligible for ICR",
-            "Continue making any required payments on existing loans until consolidation is confirmed"
+            "After consolidation, the new Direct Consolidation Loan is eligible for IBR",
+            "This path replaced ICR as the primary IDR option under OBBBA"
           ]},
-          { title: "How ICR Calculates Your Payment", body: null, points: [
-            "ICR payment = lesser of: 20% of discretionary income, OR fixed 12-year amortized payment",
-            "Discretionary income = AGI minus 100% of federal poverty guideline for family size",
-            "For most moderate-income parents with significant debt: the 20% calculation gives the lower payment",
-            "Unlike SAVE and IBR, ICR uses 100% of poverty guideline (not 150–225%) as its threshold",
-            "This means ICR's 'discretionary income' base is larger — and payments are higher than student IDR plans",
-            "But ICR is still dramatically better than Standard plan for parents in financial stress"
+          { title: "How IBR Calculates Your Payment (vs. Old ICR)", body: null, points: [
+            "IBR New: 10% of discretionary income (AGI minus 150% of federal poverty guideline)",
+            "OLD ICR (now closed): 20% of discretionary income using 100% of poverty guideline",
+            "The shift from ICR to IBR roughly halves the payment for most moderate-income parents",
+            "IBR forgiveness timeline: 20 years (IBR New) — same as for student borrowers",
+            "The $0 payment floor: if income is below the threshold, IBR payment is $0 — ICR could never reach $0",
+            "IBR payment is also capped at the Standard 10-year amount — built-in ceiling"
           ]},
-          { title: "ICR in Real Numbers", body: null, points: [
-            "Example: Parent, AGI $68,000, family size 2, Parent PLUS balance $85,000",
-            "Federal poverty guideline (2024, family of 2): $20,440",
-            "Discretionary income = $68,000 - $20,440 = $47,560",
-            "ICR payment = 20% of $47,560 ÷ 12 = $792/month",
-            "Standard 10-Year payment on $85,000 at 9.08% ≈ $1,079/month",
-            "ICR saves this parent $287/month — $3,444/year"
+          { title: "IBR in Real Numbers — Parent PLUS Example", body: null, points: [
+            "Example: Parent, AGI $68,000, family size 2, consolidated Parent PLUS balance $85,000",
+            "Federal poverty guideline (2025, family of 2): $21,150 × 150% = $31,725 threshold",
+            "IBR discretionary income = $68,000 - $31,725 = $36,275",
+            "IBR payment = 10% of $36,275 ÷ 12 = $302/month",
+            "Old ICR payment on same loan ≈ $792/month",
+            "IBR saves this parent $490/month — $5,880/year — compared to old ICR"
           ]},
-          { title: "PSLF for Parent PLUS Borrowers", body: null, points: [
-            "After consolidation, Parent PLUS loans ARE eligible for PSLF — with one critical condition",
+          { title: "PSLF for Parent PLUS Borrowers — Unchanged", body: null, points: [
+            "After consolidation, Parent PLUS loans ARE still eligible for PSLF",
             "The PARENT must be the qualifying PSLF employee — not the student",
             "The parent must work full-time for a government or 501(c)(3) employer",
-            "ICR is a qualifying IDR plan for PSLF purposes",
-            "A parent working for a qualifying employer: consolidate + enroll in ICR + certify employment annually",
-            "After 120 qualifying payments on ICR at a qualifying employer, balance is forgiven tax-free"
+            "IBR is a qualifying IDR plan for PSLF purposes",
+            "A parent working for a qualifying employer: consolidate + enroll in IBR + certify employment annually",
+            "After 120 qualifying payments on IBR at a qualifying employer, balance is forgiven tax-free"
           ]},
-          { title: "The 25-Year Forgiveness on ICR", body: "ICR includes a 25-year forgiveness provision. Any remaining balance after 25 years of qualifying ICR payments is forgiven. For parents who consolidated in their early 50s, this may mean forgiveness at age 75–80 — practically irrelevant. For younger parents or those with the highest balances, the 25-year forgiveness provides a backstop. The ICR strategy's primary value for most parents is the immediate payment reduction, not the distant forgiveness.", points: null },
-          { title: "Action Steps for Parent PLUS Borrowers", body: null, points: [
-            "Log into studentaid.gov — identify all Parent PLUS loan balances and current repayment status",
-            "Calculate Standard plan monthly payment at current balance and interest rate",
-            "Calculate ICR payment using your actual AGI and family size",
-            "If PSLF applies to your employment: consolidate, enroll in ICR, certify employment immediately",
-            "If PSLF does not apply: calculate whether ICR's payment reduction is worth the longer repayment",
-            "Consult a student loan specialist if the balance is significant and the retirement timeline is close"
+          { title: "What Happened to the Double-Consolidation Loophole", body: "The double-consolidation loophole allowed Parent PLUS borrowers to consolidate twice to access IBR or SAVE for student borrowers. OBBBA closed this loophole effective July 1, 2025. However, it turned out to be unnecessary — OBBBA also made IBR directly accessible to consolidated Parent PLUS loans through the normal single-consolidation path. The result for most borrowers is the same or better than the loophole provided.", points: null },
+          { title: "Action Steps for Existing Parent PLUS Borrowers", body: null, points: [
+            "Log into studentaid.gov — identify all Parent PLUS loan balances and origination dates",
+            "If loans disbursed before July 1, 2026: consolidation + IBR is available to you",
+            "Calculate IBR payment using your actual AGI, family size, and poverty guideline",
+            "Compare IBR monthly payment to Standard plan — calculate total savings over 10–20 years",
+            "If PSLF applies: consolidate immediately, enroll in IBR, certify employment with MOHELA",
+            "If no PSLF: evaluate whether 20-year IBR forgiveness or payoff is the better total-cost outcome"
           ]}
         ],
-        keyPoint: "ICR requires consolidation first. After that, it can save hundreds per month. The parent must qualify for PSLF — not the student.",
-        quiz: { q: "A parent wants to access ICR for her $90,000 Parent PLUS loan to lower her monthly payment. She goes to studentaid.gov and applies directly for ICR. Her servicer tells her she's not eligible. Why?", opts: ["Parent PLUS loans are never eligible for ICR", "She skipped the required first step — Parent PLUS loans must be consolidated into a Direct Consolidation Loan before ICR is accessible", "She needs to apply for PSLF first before ICR is available", "ICR is only available to borrowers who have been in repayment for at least 12 months"], correct: 1, explanation: "Parent PLUS loans are not directly eligible for ICR. She must consolidate her Parent PLUS loans into a Direct Consolidation Loan first. Only after consolidation is complete is ICR available on the new consolidated loan. Skipping this step is the most common mistake Parent PLUS borrowers make when trying to access income-driven repayment." }
+        keyPoint: "Existing Parent PLUS borrowers can now access IBR (10% of discretionary income, 20-year forgiveness) after consolidation — roughly half the payment of old ICR. Consolidate first at studentaid.gov, then enroll in IBR.",
+        quiz: { q: "A parent with $90,000 in pre-OBBBA Parent PLUS loans wants to lower her monthly payment. Under the new rules, what is her correct path?", opts: ["Apply for ICR directly at studentaid.gov — it's the only IDR option for Parent PLUS", "Consolidate into a Direct Consolidation Loan, then apply for IBR — the new IBR path replaced ICR under OBBBA", "Use the double-consolidation loophole to access SAVE", "She has no IDR options — Parent PLUS must be repaid on Standard plan"], correct: 1, explanation: "Under OBBBA, IBR is now accessible to consolidated Parent PLUS loans — replacing ICR as the primary IDR path. ICR is being phased out. The double-consolidation loophole is closed. She consolidates once at studentaid.gov, then applies for IBR. Her payment drops from what ICR would have been (~20% of discretionary income) to 10% — roughly half. For most parents, this is a significant monthly savings." }
       },
       {
         id: "5-3", title: "Alternatives to Parent PLUS",
         subtitle: "Every option to exhaust before signing a Parent PLUS application",
-        narration: "A Parent PLUS application takes about 15 minutes to complete. It can create a 25-year obligation that accrues at 9.08% annually and follows a parent into retirement. Before signing that form, every family should work through a checklist of alternatives — not because Parent PLUS is never the right choice, but because the default path of 'borrow whatever we need' skips options that could cost far less. This is that checklist.",
+        narration: "A Parent PLUS application takes about 15 minutes to complete. It can create a 20-year obligation that accrues at 8.94% annually and follows a parent into retirement. Under OBBBA, new Parent PLUS loans are now capped at $20,000 per year — but that still means $80,000+ over four years before hitting the lifetime cap, and new PLUS loans taken after July 1, 2026 have no IDR option at all. Before signing that form, every family should work through a checklist of alternatives — not because Parent PLUS is never the right choice, but because the default path of 'borrow whatever we need' skips options that could cost far less. This is that checklist.",
         slides: [
           { title: "Before Any Parent PLUS Application — This Checklist First", body: null, points: [
             "Has the student exhausted their own federal loan eligibility (subsidized + unsubsidized)?",
@@ -2084,7 +2117,7 @@ const MODULES = [
             "New interest rate: weighted average of all included loans, rounded up to nearest 1/8th percent",
             "Unlocks IDR plan eligibility for FFEL and Perkins loans",
             "Unlocks PSLF eligibility for FFEL and Perkins loans",
-            "Unlocks ICR eligibility for Parent PLUS loans",
+            "Unlocks IBR eligibility for existing Parent PLUS loans (pre-July 2026) after consolidation",
             "Process is free at studentaid.gov — takes 30–90 days to complete"
           ]},
           { title: "What Consolidation Does NOT Do", body: null, points: [
@@ -2106,7 +2139,7 @@ const MODULES = [
           { title: "When Consolidation Makes Clear Strategic Sense", body: null, points: [
             "You have FFEL loans and want to access PSLF — consolidation is mandatory",
             "You have Perkins loans and want to access IDR or PSLF",
-            "You have Parent PLUS loans and want to access ICR",
+            "You have pre-OBBBA Parent PLUS loans and want to access IBR (consolidate → IBR replaces old ICR path)",
             "You are in default and want to exit quickly via consolidation + IDR agreement",
             "You have so many loans with so many servicers that administrative chaos is costing you",
             "In all of these cases: do the math first, understand the PSLF reset risk, then proceed"
@@ -2140,8 +2173,8 @@ const MODULES = [
           { title: "What You Permanently Lose", body: null, points: [
             "All income-driven repayment plans — immediately and permanently",
             "PSLF eligibility — even if you have 80 qualifying payments banked",
-            "20–25 year IDR forgiveness",
-            "Economic hardship and unemployment deferment",
+            "20–30 year IDR forgiveness (20 for IBR New; 30 for RAP)",
+            "Economic hardship and unemployment deferment (for pre-2026 loans; eliminated for post-2026 loans under OBBBA)",
             "Forbearance options beyond what the private lender offers",
             "Death and total permanent disability discharge — private lenders may have limited options",
             "Any future federal policy changes that might benefit you (forgiveness programs, IDR improvements)"
@@ -2217,7 +2250,7 @@ const MODULES = [
           { title: "Number 4: Your Calculated IDR Payment", body: null, points: [
             "Go to studentaid.gov Loan Simulator",
             "Enter: loan balance, interest rate, AGI, family size, state",
-            "Select 'Show all plans' to compare Standard, IBR, PAYE, ICR, and SAVE side by side",
+            "Select 'Show all plans' to compare Standard, IBR, and RAP side by side",
             "Note for each plan: monthly payment, total paid over life of loan, projected forgiveness",
             "The comparison will show your monthly payment range from highest (Standard) to lowest (IDR)",
             "This 15-minute exercise is the most valuable thing you can do with this course's information"
@@ -2247,24 +2280,26 @@ const MODULES = [
         narration: "Every major student loan decision flows through the same sequence of questions. Are you in public service? What is your income-to-debt ratio? Are your loans in default? Are you a veteran? Do you have Parent PLUS loans? Are you considering refinancing? Answering these questions in order leads to the right strategy — or the right next question. This decision framework is the practical application of everything in this course, organized into a sequence you can walk through in under 30 minutes with your six numbers in hand.",
         slides: [
           { title: "Step 1: Identify and Categorize Every Loan", body: null, points: [
-            "Direct Loans: eligible for all IDR plans, PSLF, and forgiveness programs — no action required to access",
+            "Direct Loans (pre-7/1/2026): eligible for IBR, PSLF, and forgiveness programs — no action required",
+            "Direct Loans (post-7/1/2026): eligible for RAP or Standard — IBR not available for these new loans",
+            "FFEL/Perkins: must consolidate into Direct Loans to access IBR, RAP, or PSLF",
             "FFEL Loans: require consolidation into Direct Consolidation Loan to access IDR and PSLF",
             "Perkins Loans: have their own cancellation programs; require consolidation for IDR access",
-            "Parent PLUS: require consolidation for ICR; not eligible for SAVE, IBR, or PAYE",
+            "Parent PLUS: pre-2026 loans require consolidation for IBR; post-2026 Parent PLUS has NO IDR option — Standard plan only",
             "Private Loans: no IDR, no PSLF; evaluate separately from federal strategy",
             "Mixed portfolio (federal + private): develop a federal strategy first, then address private separately"
           ]},
           { title: "Step 2: Are You Pursuing PSLF?", body: null, points: [
             "Do you currently work full-time (30+ hours/week) for a 501(c)(3) nonprofit or government entity?",
             "Are you willing to remain in qualifying employment for at least 10 years total?",
-            "If YES: enroll in IBR (or SAVE when available), certify PSLF employment immediately through MOHELA",
+            "If YES: enroll in IBR (or RAP for post-2026 loans), certify PSLF employment immediately through MOHELA",
             "Verify your employer's eligibility using the PSLF Help Tool at studentaid.gov before doing anything else",
             "If NO or UNSURE: skip to Step 3 — don't let PSLF uncertainty paralyze your planning"
           ]},
           { title: "Step 3: Calculate Your Income-to-Debt Ratio and Plan", body: null, points: [
             "Below 1.0: Standard plan may be cost-effective — run Loan Simulator to verify",
             "1.0–1.5: IDR is likely beneficial — compare 10-year Standard total to IDR total + estimated forgiveness tax",
-            "1.5–2.0: IDR essential; 20–25 year forgiveness is a realistic strategic outcome",
+            "1.5–2.0: IDR essential; 20-year forgiveness (IBR) or 30-year (RAP) is a realistic strategic outcome",
             "Above 2.0: IDR forgiveness or PSLF is almost certainly your optimal path — professional advice is warranted",
             "In all cases: enroll in your chosen plan before your next payment due date — not after"
           ]},
@@ -2303,7 +2338,7 @@ const MODULES = [
           { title: "Week 1: Know Your Numbers (Days 1–7)", body: null, points: [
             "Day 1: Log in to studentaid.gov — identify every loan, type, balance, rate, and servicer",
             "Day 2: Pull your most recent tax return — find your Adjusted Gross Income (line 11)",
-            "Day 3: Run the Loan Simulator at studentaid.gov — compare Standard vs. IBR vs. ICR for your situation",
+            "Day 3: Run the Loan Simulator at studentaid.gov — compare Standard vs. IBR vs. RAP (if post-2026 loans) for your situation",
             "Day 4: Calculate your income-to-debt ratio",
             "Day 5: Determine if you have FFEL/Perkins loans requiring consolidation",
             "Day 6–7: Verify your current repayment plan and upcoming recertification deadline"
@@ -2312,7 +2347,7 @@ const MODULES = [
             "Day 8: Determine if PSLF applies to your employment — use the PSLF Help Tool",
             "Day 9: If PSLF applies: identify that IBR is your current qualifying plan; prepare to certify",
             "Day 10: If not PSLF: compare IDR to Standard total cost; identify your optimal IDR plan",
-            "Day 11: If Parent PLUS loans: verify if consolidation + ICR would reduce payments significantly",
+            "Day 11: If pre-2026 Parent PLUS loans: verify consolidation + IBR would reduce payments (replaces old ICR path)",
             "Day 12: If veteran: verify GI Bill eligibility, VR&E eligibility, TPD discharge eligibility",
             "Day 13–14: Write down your strategy decision in one sentence: your plan, your path, your timeline"
           ]},
@@ -2339,7 +2374,7 @@ const MODULES = [
             "Be extremely wary of for-profit 'student loan relief' companies — many charge for services you can do free",
             "Red flag: any company that asks for upfront fees before reviewing your situation"
           ]},
-          { title: "You Know More Than You Realize", body: "The borrowers who succeed are not the wealthiest or the highest earners — they are the ones who understood the system. You now understand income-driven repayment, forgiveness programs, consolidation strategy, veteran benefits, Parent PLUS, refinancing, the SAVE situation, and how to build a real plan. Most borrowers — even long-tenured ones — have never learned what you just learned. Use it. Review it annually. Share it with people you care about. That knowledge compounds.", points: null }
+          { title: "You Know More Than You Realize", body: "The borrowers who succeed are not the wealthiest or the highest earners — they are the ones who understood the system. You now understand income-driven repayment, forgiveness programs, the IBR and RAP landscape under OBBBA, consolidation strategy, veteran benefits, Parent PLUS, refinancing, and how to build a real plan. Most borrowers — even long-tenured ones — have never learned what you just learned. Use it. Review it annually. Share it with people you care about. That knowledge compounds.", points: null }
         ],
         keyPoint: "Execute your 30-day plan. Log in, run the numbers, enroll in your plan, certify employment, set reminders. Knowledge only creates value when acted on.",
         quiz: { q: "A borrower finishes this course on a Monday. She has $74,000 in Direct Loans, earns $49,000, works for a hospital that she believes is a nonprofit but hasn't verified. What is her single most important action in the next 24 hours?", opts: ["Call a student loan relief company for a free consultation", "Log into studentaid.gov to verify her loan types, balances, current repayment plan, and confirm her employer's nonprofit status using the PSLF Help Tool", "Refinance immediately to lock in a low rate before rates rise", "Wait until she has more free time to address her loans properly"], correct: 1, explanation: "The most important first action is information gathering with a specific purpose: verify her loans are Direct Loans (PSLF eligible), verify her current repayment plan, and — critically — verify her employer's PSLF eligibility using the PSLF Help Tool before assuming she qualifies. If her hospital is a 501(c)(3), PSLF could eliminate $74,000+ tax-free. If it's not, her strategy changes entirely. This 20-minute action determines her entire loan strategy." }
@@ -2407,7 +2442,7 @@ const RESOURCES = [
       },
       {
         heading: "Repayment Plan Eligibility",
-        fields: ["☐ Am I enrolled in IBR, PAYE, ICR, or SAVE?", "☐ NOT on Graduated, Extended, or Standard plans (unless counting final payments)?", "☐ Have I confirmed my current plan with my servicer?"]
+        fields: ["☐ Am I enrolled in IBR or RAP? (For post-2026 loans: RAP only. Pre-2026: IBR preferred.)", "☐ NOT on Graduated, Extended, or non-qualifying Standard plans?", "☐ Have I confirmed my current plan with my servicer?"]
       },
       {
         heading: "Employment Eligibility",
@@ -2449,11 +2484,11 @@ const RESOURCES = [
     sections: [
       {
         heading: "Week 1: Know Your Numbers",
-        fields: ["☐ Log in to studentaid.gov — identify all loan types, balances, rates, servicers", "☐ Find your Adjusted Gross Income on your most recent Form 1040 (line 11)", "☐ Run the Loan Simulator at studentaid.gov — compare Standard vs IBR vs ICR", "☐ Calculate your income-to-debt ratio (balance ÷ annual gross income)", "☐ Identify if any loans are FFEL, Perkins, or Parent PLUS requiring consolidation"]
+        fields: ["☐ Log in to studentaid.gov — identify all loan types, balances, rates, servicers", "☐ Find your Adjusted Gross Income on your most recent Form 1040 (line 11)", "☐ Run the Loan Simulator at studentaid.gov — compare Standard vs IBR vs RAP for your situation", "☐ Calculate your income-to-debt ratio (balance ÷ annual gross income)", "☐ Identify if any loans are FFEL, Perkins, or Parent PLUS requiring consolidation"]
       },
       {
         heading: "Week 2: Make Your Strategic Decision",
-        fields: ["☐ Verify PSLF employer eligibility using the PSLF Help Tool at studentaid.gov", "☐ Determine optimal repayment plan (IBR for PSLF, IDR for forgiveness, or Standard if ratio < 1.0)", "☐ If Parent PLUS: verify if consolidation + ICR reduces payments", "☐ If veteran: check GI Bill remaining, VR&E eligibility, and TPD discharge eligibility", "☐ Write your strategy in one sentence: 'I will [plan] because [reason] and expect [outcome]'"]
+        fields: ["☐ Verify PSLF employer eligibility using the PSLF Help Tool at studentaid.gov", "☐ Determine optimal repayment plan (IBR for pre-2026 loans pursuing PSLF; RAP for post-2026 loans; Standard if ratio < 1.0)", "☐ If Parent PLUS (pre-7/1/2026): consolidate + IBR now available — significantly better than old ICR path", "☐ If veteran: check GI Bill remaining, VR&E eligibility, and TPD discharge eligibility", "☐ Write your strategy in one sentence: 'I will [plan] because [reason] and expect [outcome]'"]
       },
       {
         heading: "Week 3: Execute",
@@ -2478,7 +2513,7 @@ const RESOURCES = [
       },
       {
         heading: "If Parent PLUS Is Unavoidable",
-        fields: ["☐ What is the Standard plan monthly payment? ($___/month)", "☐ What year will I turn 67 (full Social Security retirement age)?", "☐ Will I still be making payments at that age? (If yes: plan ICR)", "☐ Do I qualify for PSLF? (Work for government or 501c3 nonprofit?)", "☐ Have I calculated ICR payment and compared to Standard?", "☐ Do I understand that this loan CANNOT be transferred to my child?", "☐ Do I have a repayment plan confirmed BEFORE signing?"]
+        fields: ["☐ What is the Standard plan monthly payment? ($___/month)", "☐ What year will I turn 67 (full Social Security retirement age)?", "☐ Will I still be making payments at that age? (If yes: consolidate + IBR for pre-2026 loans — no IDR for post-2026 PLUS)", "☐ Do I qualify for PSLF? (Work for government or 501(c)(3) nonprofit?)", "☐ Pre-2026 loan: have I calculated IBR payment after consolidation and compared to Standard?", "☐ Do I understand that this loan CANNOT be transferred to my child?", "☐ Do I have a repayment plan confirmed BEFORE signing?"]
       }
     ]
   },
@@ -2537,8 +2572,8 @@ const GLOSSARY = [
   { term: "Adjusted Gross Income (AGI)", def: "Your total income minus above-the-line deductions, found on line 11 of your federal Form 1040. Used to calculate all income-driven repayment payments." },
   { term: "Capitalization", def: "When unpaid accrued interest is added to your loan principal balance. After capitalization, you pay interest on a larger number. Can cost thousands before your first payment is due." },
   { term: "Cost of Attendance (COA)", def: "The total estimated cost of one academic year at a school: tuition, fees, room and board, books, transportation, and personal expenses." },
-  { term: "Direct Consolidation Loan", def: "A federal loan that combines multiple federal loans into one. Required to access PSLF for FFEL/Perkins loans and ICR for Parent PLUS loans." },
-  { term: "Direct PLUS Loan", def: "A federal loan available to graduate students (Grad PLUS) and parents of undergraduates (Parent PLUS). Highest interest rate of any federal loan at 9.08% (2024-25)." },
+  { term: "Direct Consolidation Loan", def: "A federal loan that combines multiple federal loans into one. Required to access PSLF for FFEL/Perkins loans and IBR for existing Parent PLUS loans (pre-July 2026). Does not create new eligibility for post-2026 Parent PLUS loans." },
+  { term: "Direct PLUS Loan", def: "A federal loan for parents of undergraduates (Parent PLUS) or graduate students (Grad PLUS). Grad PLUS was eliminated for new borrowers effective July 1, 2026 under OBBBA. Parent PLUS interest rate: 8.94% (2025-26). New OBBBA Parent PLUS cap: $20,000/year, $65,000 lifetime per student." },
   { term: "Direct Subsidized Loan", def: "Federal loan for undergraduates with financial need. The government pays the interest while you're enrolled at least half-time. Best federal loan type." },
   { term: "Direct Unsubsidized Loan", def: "Federal loan for undergraduates and graduate students. No financial need required. Interest accrues from disbursement — even while in school." },
   { term: "Discretionary Income", def: "Your Adjusted Gross Income minus a multiple of the federal poverty guideline for your family size. All IDR payments are calculated as a percentage of this number." },
@@ -2546,19 +2581,20 @@ const GLOSSARY = [
   { term: "FFEL Loans", def: "Federal Family Education Loans — an older loan type no longer issued. Not directly eligible for PSLF or most IDR plans. Must be consolidated into a Direct Consolidation Loan to access these programs." },
   { term: "Forbearance", def: "A temporary pause or reduction in loan payments granted by your servicer. Interest continues to accrue. Does not count toward PSLF or IDR forgiveness timelines." },
   { term: "Fresh Start", def: "A 2022-2024 one-time federal program that allowed defaulted borrowers to return loans to good standing with a single request. The program has ended; rehabilitation and consolidation are now the available options." },
-  { term: "IBR (Income-Based Repayment)", def: "An income-driven repayment plan. IBR New (post-July 2014): 10% of discretionary income, 20-year forgiveness. IBR Old: 15% of discretionary income, 25-year forgiveness." },
-  { term: "ICR (Income-Contingent Repayment)", def: "An income-driven repayment plan. 20% of discretionary income or a fixed 12-year amount, 25-year forgiveness. The only IDR option for consolidated Parent PLUS loans." },
-  { term: "IDR (Income-Driven Repayment)", def: "A category of federal repayment plans that cap monthly payments at a percentage of your discretionary income. Includes SAVE, IBR, PAYE, and ICR. All include forgiveness provisions." },
+  { term: "IBR (Income-Based Repayment)", def: "The primary IDR plan for pre-July 2026 borrowers under post-OBBBA rules. IBR New (post-July 2014): 10% of discretionary income, 20-year forgiveness. IBR Old (pre-July 2014): 15%, 25-year forgiveness. Payment can reach /bin/sh. Now also available for consolidated Parent PLUS loans. Existing SAVE/PAYE/ICR borrowers should switch to IBR by July 1, 2028." },
+  { term: "ICR (Income-Contingent Repayment)", def: "An income-driven repayment plan being phased out under OBBBA. Previously the only IDR option for consolidated Parent PLUS loans. Must transition to IBR or RAP by July 1, 2028. 20% of discretionary income, 25-year forgiveness. Replaced by IBR for Parent PLUS borrowers." },
+  { term: "IDR (Income-Driven Repayment)", def: "A category of federal repayment plans that cap monthly payments at a percentage of your discretionary income. For pre-July 2026 loans: IBR is the primary plan. For post-July 2026 loans: RAP is the only IDR option. SAVE, PAYE, and ICR are being phased out (transition deadline: July 1, 2028)." },
   { term: "Income-to-Debt Ratio", def: "Your total student loan balance divided by your annual gross income. Below 1.0: standard plan may work. Above 1.5: IDR essential. Above 2.0: forgiveness is a realistic strategy." },
   { term: "Loan Rehabilitation", def: "A process to exit student loan default by making 9 voluntary, affordable payments within 10 months. Removes the default notation from your credit report. Can only be used once per loan." },
   { term: "Loan Servicer", def: "A private company contracted by the Department of Education to manage your federal loan account. Handles payments and plan changes but is not required to recommend your best option." },
   { term: "MOHELA", def: "Missouri Higher Education Loan Authority. The current servicer for all PSLF-track borrowers. Submit Employment Certification Forms and check qualifying payment counts at MOHELA.com." },
   { term: "Net Price", def: "Cost of Attendance minus grants and scholarships only (not loans, not work-study). The actual out-of-pocket cost to attend a school. The only valid number for comparing schools." },
-  { term: "PAYE (Pay As You Earn)", def: "An income-driven repayment plan. 10% of discretionary income, capped at Standard plan payment. 20-year forgiveness. Available only to borrowers who meet specific timing requirements." },
+  { term: "PAYE (Pay As You Earn)", def: "An income-driven repayment plan being phased out under OBBBA. 10% of discretionary income, 20-year forgiveness. Must transition to IBR or RAP by July 1, 2028 or borrower is auto-placed in RAP." },
   { term: "Perkins Loan", def: "An older federal loan type (no longer issued) held by schools, not servicers. Has unique cancellation programs for teachers, nurses, and other public service workers." },
-  { term: "PSLF (Public Service Loan Forgiveness)", def: "Federal program providing complete, tax-free forgiveness of Direct Loan balances after 120 qualifying payments while working full-time for a qualifying government or 501(c)(3) employer." },
+  { term: "RAP (Repayment Assistance Plan)", def: "The new income-driven repayment plan created by OBBBA, available July 1, 2026. The only IDR option for loans disbursed after July 1, 2026. Payment = 1%–10% of AGI, minimum $10/month, full interest subsidy, 30-year forgiveness. Qualifies for PSLF." },
+  { term: "PSLF (Public Service Loan Forgiveness)", def: "Federal program providing complete, tax-free forgiveness of Direct Loan balances after 120 qualifying payments while working full-time for a qualifying government or 501(c)(3) employer. PSLF itself was not changed by OBBBA. Qualifying repayment plans include IBR and RAP." },
   { term: "Recertification", def: "The annual process of submitting updated income and family size to your servicer to maintain IDR enrollment. Missing the deadline can spike your payment to Standard plan rates overnight." },
-  { term: "SAVE (Saving on a Valuable Education)", def: "An IDR plan introduced in 2023 with 5%/10% payment rates and full interest subsidy. Currently blocked by federal court injunctions. PSLF borrowers should switch to IBR." },
+  { term: "SAVE (Saving on a Valuable Education)", def: "An IDR plan introduced in 2023 that was blocked by federal courts in 2024 and effectively superseded by OBBBA. Borrowers in SAVE must transition to IBR or RAP by July 1, 2028. SAVE is no longer a viable repayment strategy." },
   { term: "Scholarship Displacement", def: "When a school reduces its institutional grant by the amount of an outside scholarship, leaving the student no better off. Ask your financial aid office about their policy before applying for outside awards." },
   { term: "SCRA (Servicemembers Civil Relief Act)", def: "Federal law that caps interest on pre-service debts at 6% during active military duty. Must be proactively invoked in writing with a copy of active duty orders." },
   { term: "Subsidized vs. Unsubsidized", def: "Subsidized: government pays interest while enrolled. Unsubsidized: interest accrues from disbursement. Always maximize subsidized loans before unsubsidized." },
