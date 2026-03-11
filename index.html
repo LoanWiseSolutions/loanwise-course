@@ -489,10 +489,10 @@ background-image: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,168,76,0.
     <div class="login-logo">Loan <span>Wise</span> Solutions</div>
     <div class="login-tagline">Student Access Portal</div>
     <label class="login-label">Enter your access password</label>
-    <input type="password" class="login-input" id="pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
-    <button class="login-btn" onclick="doLogin()">Access My Course →</button>
+    <input type="password" class="login-input" id="pw-input" placeholder="Password" >
+    <button class="login-btn" id="login-btn">Access My Course →</button>
     <div class="login-error" id="login-error"></div>
-    <div class="login-support">Need help? <a href="/cdn-cgi/l/email-protection#bccfc9ccccd3cec8fcd0d3ddd2cbd5cfd9cfd3d0c9c8d5d3d2cf92dfd3d1"><span class="__cf_email__" data-cfemail="2655535656495452664a494748514f554355494a53524f4948550845494b">[email&#160;protected]</span></a></div>
+    <div class="login-support">Need help? <a href="/cdn-cgi/l/email-protection#15666065657a676155797a747b627c6670667a7960617c7a7b663b767a78"><span class="__cf_email__" data-cfemail="84f7f1f4f4ebf6f0c4e8ebe5eaf3edf7e1f7ebe8f1f0edebeaf7aae7ebe9">[email&#160;protected]</span></a></div>
   </div>
 </div>
 
@@ -594,12 +594,11 @@ background-image: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(201,168,76,0.
 </div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
-document.addEventListener('DOMContentLoaded', function() {
-  var btn = document.querySelector('.login-btn');
-  var input = document.getElementById('pw-input');
-  if (btn) btn.addEventListener('click', doLogin);
-  if (input) input.addEventListener('keydown', function(e){ if(e.key==="Enter") doLogin(); });
-});
+// Attach login events
+var loginBtn = document.getElementById('login-btn');
+var pwInput = document.getElementById('pw-input');
+if (loginBtn) loginBtn.addEventListener('click', doLogin);
+if (pwInput) pwInput.addEventListener('keydown', function(e){ if(e.key==="Enter") doLogin(); });
 </script><script>
 
 // ============================================================
@@ -1474,4 +1473,9 @@ const certHTML = `<!DOCTYPE html><html><head><meta charset="UTF-8">
     <div class="issued">Issued: ${date}</div>
     <div class="sig">Danielle Kaller<br><span style="font-weight:400;color:#6B7280;font-size:0.85rem;">Federal Student Loan Expert · Loan Wise Solutions LLC</span></div>
   </div>
-  <script>setTimeout(()=>wi
+  <script>setTimeout(()=>window.print(),500);<\/script></body></html>`;
+
+const w = window.open(’’, ‘_blank’);
+w.document.write(certHTML);
+w.document.close();
+}
