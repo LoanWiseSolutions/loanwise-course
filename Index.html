@@ -239,18 +239,7 @@ p { line-height: 1.7; }
   flex: 1; display: flex; flex-direction: column; overflow: hidden; min-width: 0;
 }
 
-/* Lesson breadcrumb nav bar */
-#lesson-nav-bar {
-  height: 48px; min-height: 48px;
-  background: var(--white);
-  border-bottom: 1px solid var(--border);
-  display: none; align-items: center; justify-content: space-between;
-  padding: 0 24px; gap: 12px; flex-shrink: 0;
-}
-#lesson-view.active ~ #lesson-nav-bar { display: flex; }
-.lesson-breadcrumb-text { font-size: 0.8rem; color: var(--gray); flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.lesson-breadcrumb-text strong { color: var(--navy); }
-.lesson-nav-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
 
 .lesson-nav-btn {
   padding: 7px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 600;
@@ -370,10 +359,11 @@ p { line-height: 1.7; }
    ============================================================ */
 #lesson-breadcrumb {
   font-size: 0.8rem; color: var(--gray);
-  padding: 12px 32px;
+  padding: 11px 32px;
   background: var(--white);
   border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
+  position: sticky; top: 0; z-index: 10;
+  margin: 0 0 24px 0;
 }
 #lesson-breadcrumb strong { color: var(--navy); }
 
@@ -576,7 +566,7 @@ p { line-height: 1.7; }
 .lesson-nav-bottom .lesson-nav-btn { flex: 1; text-align: center; padding: 11px; }
 
 /* Breadcrumb / top nav for lesson */
-#lesson-body > #lesson-breadcrumb { margin: -28px -32px 24px; padding: 12px 32px; }
+#lesson-body { padding: 0 32px 60px; }
 
 /* ============================================================
    RESOURCES VIEW
@@ -734,9 +724,6 @@ p { line-height: 1.7; }
     <!-- CONTENT AREA -->
     <div id="content-area">
 
-      <!-- Lesson breadcrumb (only shown in lesson view) -->
-      <div id="lesson-breadcrumb"></div>
-
       <!-- DASHBOARD VIEW -->
       <div id="dashboard-view">
         <div class="dash-hero">
@@ -796,6 +783,7 @@ p { line-height: 1.7; }
 
       <!-- LESSON VIEW -->
       <div id="lesson-view">
+        <div id="lesson-breadcrumb"></div>
         <div id="lesson-body"></div>
       </div>
 
@@ -2654,16 +2642,32 @@ function buildSidebar() {
   const nav = document.getElementById('sidebar-nav');
   nav.innerHTML = '';
 
-  // Nav buttons
-  nav.innerHTML += `
-    <div class="sidebar-section-label">COURSE</div>
-    <button class="sidebar-nav-btn active" id="snav-course" onclick="showDashboard()">
-      <span class="snav-icon">🏠</span> Dashboard
-    </button>
-    <div class="sidebar-divider"></div>
-    <div class="sidebar-section-label">MODULES</div>
-  `;
+  // Top nav - create elements properly
+  const topFrag = document.createDocumentFragment();
 
+  const topLabel = document.createElement('div');
+  topLabel.className = 'sidebar-section-label';
+  topLabel.textContent = 'COURSE';
+  topFrag.appendChild(topLabel);
+
+  const dashBtn = document.createElement('button');
+  dashBtn.className = 'sidebar-nav-btn active';
+  dashBtn.id = 'snav-course';
+  dashBtn.onclick = showDashboard;
+  dashBtn.innerHTML = '<span class="snav-icon">🏠</span> Dashboard';
+  topFrag.appendChild(dashBtn);
+
+  const div1 = document.createElement('div'); div1.className = 'sidebar-divider';
+  topFrag.appendChild(div1);
+
+  const modLabel = document.createElement('div');
+  modLabel.className = 'sidebar-section-label';
+  modLabel.textContent = 'MODULES';
+  topFrag.appendChild(modLabel);
+
+  nav.appendChild(topFrag);
+
+  // Module groups
   MODULES.forEach((mod, mi) => {
     const completedInMod = mod.lessons.filter(l => completedLessons.has(l.id)).length;
     const allDone = completedInMod === mod.lessons.length;
@@ -2683,24 +2687,39 @@ function buildSidebar() {
           return `<button class="lesson-item ${done ? 'completed' : ''}" id="sidebar-lesson-${les.id}" onclick="loadLesson(${flatIdx})">
             <span class="lesson-check">${done ? '✓' : ''}</span>
             <span class="lesson-item-name">${li+1}. ${les.title}</span>
-            ${hasNote ? '<span class="note-dot" title="You have notes on this lesson">📝</span>' : ''}
+            ${hasNote ? '<span class="note-dot" title="You have notes">📝</span>' : ''}
           </button>`;
         }).join('')}
       </div>`;
     nav.appendChild(group);
   });
 
-  // Bottom nav
-  nav.innerHTML += `
-    <div class="sidebar-divider"></div>
-    <div class="sidebar-section-label">TOOLS</div>
-    <button class="sidebar-nav-btn" id="snav-resources" onclick="showResources()">
-      <span class="snav-icon">📥</span> Downloads & Worksheets
-    </button>
-    <button class="sidebar-nav-btn" id="snav-glossary" onclick="showGlossary()">
-      <span class="snav-icon">📖</span> Glossary of Terms
-    </button>
-  `;
+  // Bottom nav - create elements properly
+  const botFrag = document.createDocumentFragment();
+
+  const div2 = document.createElement('div'); div2.className = 'sidebar-divider';
+  botFrag.appendChild(div2);
+
+  const toolLabel = document.createElement('div');
+  toolLabel.className = 'sidebar-section-label';
+  toolLabel.textContent = 'TOOLS';
+  botFrag.appendChild(toolLabel);
+
+  const resBtn = document.createElement('button');
+  resBtn.className = 'sidebar-nav-btn';
+  resBtn.id = 'snav-resources';
+  resBtn.onclick = () => showResources();
+  resBtn.innerHTML = '<span class="snav-icon">📥</span> Downloads & Worksheets';
+  botFrag.appendChild(resBtn);
+
+  const glossBtn = document.createElement('button');
+  glossBtn.className = 'sidebar-nav-btn';
+  glossBtn.id = 'snav-glossary';
+  glossBtn.onclick = showGlossary;
+  glossBtn.innerHTML = '<span class="snav-icon">📖</span> Glossary of Terms';
+  botFrag.appendChild(glossBtn);
+
+  nav.appendChild(botFrag);
 
   const firstList = document.getElementById('lesson-list-0');
   if (firstList) firstList.classList.add('open');
@@ -2727,7 +2746,8 @@ function refreshSidebar() {
       if (btn) {
         const done = completedLessons.has(les.id);
         btn.className = `lesson-item ${done ? 'completed' : ''}`;
-        btn.querySelector('.lesson-check').textContent = done ? '✓' : '';
+        const checkEl = btn.querySelector('.lesson-check');
+        if (checkEl) checkEl.textContent = done ? '✓' : '';
         // refresh note dot
         let noteDot = btn.querySelector('.note-dot');
         const hasNote = lessonNotes[les.id] && lessonNotes[les.id].trim();
@@ -2867,13 +2887,6 @@ function loadLesson(flatIdx) {
 
   document.getElementById('lesson-breadcrumb').innerHTML =
     `<strong>Module ${mod.id}: ${mod.name}</strong> &nbsp;·&nbsp; Lesson ${entry.lessonIndex + 1}: ${les.title}`;
-
-  const completeBtn = document.getElementById('complete-btn');
-  if (completedLessons.has(les.id)) {
-    completeBtn.textContent = '✓ Completed'; completeBtn.className = 'lesson-nav-btn btn-complete done';
-  } else {
-    completeBtn.textContent = '✓ Mark Complete'; completeBtn.className = 'lesson-nav-btn btn-complete';
-  }
 
   buildLessonBody(mod, les);
   updateActiveSidebarLesson();
@@ -3019,7 +3032,8 @@ function goToSlide(idx) {
   slides.forEach((s, i) => s.classList.toggle('active', i === idx));
   dots.forEach((d, i) => d.classList.toggle('active', i === idx));
   currentSlide = idx;
-  document.getElementById('slides-counter').textContent = `${idx+1} / ${slideCount}`;
+  const counter = document.getElementById('slides-counter');
+  if (counter) counter.textContent = `${idx+1} / ${slideCount}`;
   const p = document.getElementById('slide-prev-btn');
   const n = document.getElementById('slide-next-btn');
   if (p) p.disabled = idx === 0;
